@@ -42,8 +42,8 @@ module.exports = {
         link: '/schema/'
       },
       {
-        text: 'API documentation',
-        link: 'https://armitage35.github.io/cci_graphQL_doc/schema/query.doc.html'
+        text: 'Get in touch',
+        link: 'mailto:mohammad@cci-research.com'
       }
     ],
     sidebar: {
