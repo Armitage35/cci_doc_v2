@@ -10,7 +10,8 @@
   "repository": "/cci-doc",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "generateDoc": "graphql-markdown https://api.staging.bumpertobumper.ca/cci_graphql --update-file docs/schema/README.md --title Schema --no-toc"
   },
   "license": "MIT",
   "devDependencies": {
