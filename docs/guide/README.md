@@ -1,6 +1,7 @@
 # Introduction
+> You can use the Bumper To Bumper GraphQL API to create precise and flexible queries for the data you need to integrate with Bumper To Bumper.
 
-## General introduction 
+## General introduction
 ### Feedback is Welcome
 The more suggestions our developers make, the better our APIs become. If you send us any feedback or suggestions regarding the APIs or documentation, we will look into it and come back to you.
 

@@ -27,8 +27,8 @@ module.exports = {
 				link: '/schema/'
 			},
 			{
-				text: 'Get in touch',
-				link: 'mailto:mohammad@cci-research.com'
+				text: 'Explorer',
+				link: 'https://api.staging.bumpertobumper.ca/cci_graphqlmailto:mohammad@cci-research.com'
 			}
 		],
 		sidebar: {
