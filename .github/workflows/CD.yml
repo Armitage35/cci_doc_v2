@@ -23,7 +23,8 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: ${{ matrix.node-version }}
-            - run: git config --global user.email adrien.dubois35@gmail.com && git config --global user.name Adrien D. Ahlqvist
+            - run: git config --global user.email adrien.dubois35@gmail.com
+            - run: git config --global user.name Adrien D. Ahlqvist
             - run: npm install -g yarn
             - run: yarn
             - run: yarn deploy
