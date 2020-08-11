@@ -16,7 +16,8 @@
 		"start": "vuepress dev docs",
 		"lint": "yarn prettier --write .",
 		"build": "yarn lint && yarn generateDoc && vuepress build docs",
-		"generateDoc": "graphql-markdown https://api.staging.bumpertobumper.ca/cci_graphql --update-file docs/schema/README.md --title Schema --no-toc"
+		"generateDoc": "graphql-markdown https://api.staging.bumpertobumper.ca/cci_graphql --update-file docs/schema/README.md --title Schema --no-toc",
+		"deploy": "bash deploy.sh"
 	},
 	"license": "MIT",
 	"devDependencies": {

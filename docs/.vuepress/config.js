@@ -3,6 +3,7 @@ const { description } = require('../../package');
 module.exports = {
 	title: "Bumper to Bumper's GraphQL API",
 	description: description,
+	base: '/cci_doc_v2/',
 
 	head: [
 		['meta', { name: 'theme-color', content: '#3eaf7c' }],
