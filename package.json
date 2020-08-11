@@ -7,7 +7,10 @@
 		"name": "Adrien D. Ahlqvist",
 		"email": "adrien.dubois35@gmail.com"
 	},
-	"repository": "/cci-doc",
+	"repository": {
+		"type": "git",
+		"url": "github.com:Armitage35/cci_doc_v2.git"
+	},
 	"scripts": {
 		"dev": "vuepress dev docs",
 		"start": "vuepress dev docs",
