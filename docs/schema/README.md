@@ -6,8 +6,8 @@ sidebar: auto
 
 # Schema
 
-
 ## Query
+
 <table>
 <thead>
 <tr>
@@ -11530,7 +11530,7 @@ In a given list.
 <td valign="top">[<a href="#memberfilter">MemberFilter</a>!]</td>
 <td>
 
-Conjunction of filters joined by ``AND``.
+Conjunction of filters joined by `AND`.
 
 </td>
 </tr>
@@ -11539,7 +11539,7 @@ Conjunction of filters joined by ``AND``.
 <td valign="top">[<a href="#memberfilter">MemberFilter</a>!]</td>
 <td>
 
-Conjunction of filters joined by ``OR``.
+Conjunction of filters joined by `OR`.
 
 </td>
 </tr>
@@ -11675,7 +11675,7 @@ In a given list.
 <td valign="top">[<a href="#servicefilter">ServiceFilter</a>!]</td>
 <td>
 
-Conjunction of filters joined by ``AND``.
+Conjunction of filters joined by `AND`.
 
 </td>
 </tr>
@@ -11684,7 +11684,7 @@ Conjunction of filters joined by ``AND``.
 <td valign="top">[<a href="#servicefilter">ServiceFilter</a>!]</td>
 <td>
 
-Conjunction of filters joined by ``OR``.
+Conjunction of filters joined by `OR`.
 
 </td>
 </tr>
@@ -11797,7 +11797,7 @@ In a given list.
 <td valign="top">[<a href="#shopfilter">ShopFilter</a>!]</td>
 <td>
 
-Conjunction of filters joined by ``AND``.
+Conjunction of filters joined by `AND`.
 
 </td>
 </tr>
@@ -11806,7 +11806,7 @@ Conjunction of filters joined by ``AND``.
 <td valign="top">[<a href="#shopfilter">ShopFilter</a>!]</td>
 <td>
 
-Conjunction of filters joined by ``OR``.
+Conjunction of filters joined by `OR`.
 
 </td>
 </tr>
@@ -16217,7 +16217,7 @@ value as specified by
 
 ### Float
 
-The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](http://en.wikipedia.org/wiki/IEEE_floating_point). 
+The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](http://en.wikipedia.org/wiki/IEEE_floating_point).
 
 ### ID
 
@@ -16231,9 +16231,7 @@ The `Int` scalar type represents non-fractional signed whole numeric values. Int
 
 The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
 
-
 ## Interfaces
-
 
 ### Node
 

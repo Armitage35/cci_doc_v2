@@ -6,24 +6,24 @@
 
 ```graphql
 query {
-  investment(id: $ID) {
-    PaidTo
-    MemberID
-    ShopID
-    InvestmentTypeID
-    CreateDate
-    Amount
-    Comment
-    PaymentType
-    PaymentDate
-    PaymentNumber
-    InvestmentType {
-      ID
-      Type
-      AvailableTo
-      id
-    }
-  }
+	investment(id: $ID) {
+		PaidTo
+		MemberID
+		ShopID
+		InvestmentTypeID
+		CreateDate
+		Amount
+		Comment
+		PaymentType
+		PaymentDate
+		PaymentNumber
+		InvestmentType {
+			ID
+			Type
+			AvailableTo
+			id
+		}
+	}
 }
 ```
 
@@ -39,20 +39,20 @@ curl --request POST \
 ### JavaScript
 
 ```js
-fetch("https://api.staging.bumpertobumper.ca/cci_graphql", {
-  method: "POST",
-  headers: {
-    "content-type": "application/json",
-  },
-  body:
-    '{"query":"query {\\n  investment (id: \\n    \\"$ID\\") {\\n    PaidTo\\n    MemberID\\n    ShopID\\n    InvestmentTypeID\\n    CreateDate\\n    Amount\\n    Comment\\n    PaymentType\\n    PaymentDate\\n    PaymentNumber\\n    InvestmentType {\\n      ID\\n      Type\\n      AvailableTo\\n      id\\n    } \\n  }\\n}"}',
+fetch('https://api.staging.bumpertobumper.ca/cci_graphql', {
+	method: 'POST',
+	headers: {
+		'content-type': 'application/json',
+	},
+	body:
+		'{"query":"query {\\n  investment (id: \\n    \\"$ID\\") {\\n    PaidTo\\n    MemberID\\n    ShopID\\n    InvestmentTypeID\\n    CreateDate\\n    Amount\\n    Comment\\n    PaymentType\\n    PaymentDate\\n    PaymentNumber\\n    InvestmentType {\\n      ID\\n      Type\\n      AvailableTo\\n      id\\n    } \\n  }\\n}"}',
 })
-  .then((response) => {
-    console.log(response);
-  })
-  .catch((err) => {
-    console.error(err);
-  });
+	.then((response) => {
+		console.log(response);
+	})
+	.catch((err) => {
+		console.error(err);
+	});
 ```
 
 ### Pyhton
@@ -80,28 +80,28 @@ print(data.decode("utf-8"))
 
 ```graphql
 query {
-  part(id: $ID) {
-    PRTId
-    SUPKey
-    PRTLineCode
-    PRTSubLine
-    PRTSubLineDescEn
-    PRTSubLineDescFr
-    PRTBrand
-    PRTArticle
-    PRTDescEn
-    PRTDescFr
-    PRTCode
-    PRTChartDescEn
-    PRTChartDescFr
-    PRTLabourHours
-    PRTQa
-    PRTActive
-    Supplier {
-      id
-      IsActive
-    }
-  }
+	part(id: $ID) {
+		PRTId
+		SUPKey
+		PRTLineCode
+		PRTSubLine
+		PRTSubLineDescEn
+		PRTSubLineDescFr
+		PRTBrand
+		PRTArticle
+		PRTDescEn
+		PRTDescFr
+		PRTCode
+		PRTChartDescEn
+		PRTChartDescFr
+		PRTLabourHours
+		PRTQa
+		PRTActive
+		Supplier {
+			id
+			IsActive
+		}
+	}
 }
 ```
 
@@ -117,20 +117,20 @@ curl --request POST \
 ### JavaScript
 
 ```js
-fetch("https://api.staging.bumpertobumper.ca/cci_graphql", {
-  method: "POST",
-  headers: {
-    "content-type": "application/json",
-  },
-  body:
-    '{"query":"query {\\n  part (id: \\"$ID\\") {\\n    PRTId\\n    SUPKey\\n    PRTLineCode\\n    PRTSubLine\\n    PRTSubLineDescEn\\n    PRTSubLineDescFr\\n    PRTBrand\\n    PRTArticle\\n    PRTDescEn\\n    PRTDescFr\\n    PRTCode\\n    PRTChartDescEn\\n    PRTChartDescFr\\n    PRTLabourHours\\n    PRTQa\\n    PRTActive\\n    Supplier {\\n      id\\n      IsActive\\n    }\\n  }\\n}"}',
+fetch('https://api.staging.bumpertobumper.ca/cci_graphql', {
+	method: 'POST',
+	headers: {
+		'content-type': 'application/json',
+	},
+	body:
+		'{"query":"query {\\n  part (id: \\"$ID\\") {\\n    PRTId\\n    SUPKey\\n    PRTLineCode\\n    PRTSubLine\\n    PRTSubLineDescEn\\n    PRTSubLineDescFr\\n    PRTBrand\\n    PRTArticle\\n    PRTDescEn\\n    PRTDescFr\\n    PRTCode\\n    PRTChartDescEn\\n    PRTChartDescFr\\n    PRTLabourHours\\n    PRTQa\\n    PRTActive\\n    Supplier {\\n      id\\n      IsActive\\n    }\\n  }\\n}"}',
 })
-  .then((response) => {
-    console.log(response);
-  })
-  .catch((err) => {
-    console.error(err);
-  });
+	.then((response) => {
+		console.log(response);
+	})
+	.catch((err) => {
+		console.error(err);
+	});
 ```
 
 ### Pyhton
@@ -158,18 +158,18 @@ print(data.decode("utf-8"))
 
 ```graphql
 {
-  shopTechnician(id: "$ID") {
-    TCHKey
-    SHPKey
-    TCHTitle
-    TCHFname
-    TCHEmail
-    TCHTechrole
-    TCHServrole
-    TCHOwnerrole
-    TCHOtherrole
-    TCHOtherroletxt
-  }
+	shopTechnician(id: "$ID") {
+		TCHKey
+		SHPKey
+		TCHTitle
+		TCHFname
+		TCHEmail
+		TCHTechrole
+		TCHServrole
+		TCHOwnerrole
+		TCHOtherrole
+		TCHOtherroletxt
+	}
 }
 ```
 
@@ -185,20 +185,20 @@ curl --request POST \
 ### Javascript
 
 ```javascript
-fetch("https://api.staging.bumpertobumper.ca/cci_graphql", {
-  method: "POST",
-  headers: {
-    "content-type": "application/json",
-  },
-  body:
-    '{"query":"{\\n  shopTechnician(id: \\"$ID\\") {\\n    TCHKey\\n    SHPKey\\n    TCHTitle\\n    TCHFname\\n    TCHEmail\\n    TCHTechrole\\n    TCHServrole\\n    TCHOwnerrole\\n    TCHOtherrole\\n    TCHOtherroletxt\\n  }\\n}\\n"}',
+fetch('https://api.staging.bumpertobumper.ca/cci_graphql', {
+	method: 'POST',
+	headers: {
+		'content-type': 'application/json',
+	},
+	body:
+		'{"query":"{\\n  shopTechnician(id: \\"$ID\\") {\\n    TCHKey\\n    SHPKey\\n    TCHTitle\\n    TCHFname\\n    TCHEmail\\n    TCHTechrole\\n    TCHServrole\\n    TCHOwnerrole\\n    TCHOtherrole\\n    TCHOtherroletxt\\n  }\\n}\\n"}',
 })
-  .then((response) => {
-    console.log(response);
-  })
-  .catch((err) => {
-    console.error(err);
-  });
+	.then((response) => {
+		console.log(response);
+	})
+	.catch((err) => {
+		console.error(err);
+	});
 ```
 
 ### Python
