@@ -5,7 +5,7 @@
 - **BannerCommunication**: Email notifications triggered upon Banner and/or elment changes (signup, cancellation, conversion)
 - **Element**: Options available for banners
 - **ExitInterview**: Survey of 4 questions conducted over the phone after shop closes
-- **Investment**: Payments which have been made to Shops or Members. NOTE: you'd need to check PaidTo column to determine to  whom the payment has been made.
+- **Investment**: Payments which have been made to Shops or Members. NOTE: you'd need to check PaidTo column to determine to whom the payment has been made.
 - **InvestmentType**: Type of funds available in the system
 - **MajorAccount**: Major account list (e.g Canadian Tire ...etc.)
 - **MemberEmployee**: Employees of the members

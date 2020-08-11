@@ -1,9 +1,12 @@
 # Code samples
+
 ## Getting investment details
+
 ### GraphQL
+
 ```graphql
 query {
-  investment (id: $ID) {
+  investment(id: $ID) {
     PaidTo
     MemberID
     ShopID
@@ -25,6 +28,7 @@ query {
 ```
 
 ### CURL
+
 ```shell
 curl --request POST \
   --url https://api.staging.bumpertobumper.ca/cci_graphql \
@@ -33,23 +37,26 @@ curl --request POST \
 ```
 
 ### JavaScript
+
 ```js
 fetch("https://api.staging.bumpertobumper.ca/cci_graphql", {
-  "method": "POST",
-  "headers": {
-    "content-type": "application/json"
+  method: "POST",
+  headers: {
+    "content-type": "application/json",
   },
-  "body": "{\"query\":\"query {\\n  investment (id: \\n    \\\"$ID\\\") {\\n    PaidTo\\n    MemberID\\n    ShopID\\n    InvestmentTypeID\\n    CreateDate\\n    Amount\\n    Comment\\n    PaymentType\\n    PaymentDate\\n    PaymentNumber\\n    InvestmentType {\\n      ID\\n      Type\\n      AvailableTo\\n      id\\n    } \\n  }\\n}\"}"
+  body:
+    '{"query":"query {\\n  investment (id: \\n    \\"$ID\\") {\\n    PaidTo\\n    MemberID\\n    ShopID\\n    InvestmentTypeID\\n    CreateDate\\n    Amount\\n    Comment\\n    PaymentType\\n    PaymentDate\\n    PaymentNumber\\n    InvestmentType {\\n      ID\\n      Type\\n      AvailableTo\\n      id\\n    } \\n  }\\n}"}',
 })
-.then(response => {
-  console.log(response);
-})
-.catch(err => {
-  console.error(err);
-});
+  .then((response) => {
+    console.log(response);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
 ```
 
 ### Pyhton
+
 ```python
 import http.client
 
@@ -68,10 +75,12 @@ print(data.decode("utf-8"))
 ```
 
 ## Get Parts details
+
 ### GraphQL
+
 ```graphql
 query {
-  part (id: $ID) {
+  part(id: $ID) {
     PRTId
     SUPKey
     PRTLineCode
@@ -97,6 +106,7 @@ query {
 ```
 
 ### CURL
+
 ```shell
 curl --request POST \
   --url https://api.staging.bumpertobumper.ca/cci_graphql \
@@ -105,23 +115,26 @@ curl --request POST \
 ```
 
 ### JavaScript
+
 ```js
 fetch("https://api.staging.bumpertobumper.ca/cci_graphql", {
-  "method": "POST",
-  "headers": {
-    "content-type": "application/json"
+  method: "POST",
+  headers: {
+    "content-type": "application/json",
   },
-  "body": "{\"query\":\"query {\\n  part (id: \\\"$ID\\\") {\\n    PRTId\\n    SUPKey\\n    PRTLineCode\\n    PRTSubLine\\n    PRTSubLineDescEn\\n    PRTSubLineDescFr\\n    PRTBrand\\n    PRTArticle\\n    PRTDescEn\\n    PRTDescFr\\n    PRTCode\\n    PRTChartDescEn\\n    PRTChartDescFr\\n    PRTLabourHours\\n    PRTQa\\n    PRTActive\\n    Supplier {\\n      id\\n      IsActive\\n    }\\n  }\\n}\"}"
+  body:
+    '{"query":"query {\\n  part (id: \\"$ID\\") {\\n    PRTId\\n    SUPKey\\n    PRTLineCode\\n    PRTSubLine\\n    PRTSubLineDescEn\\n    PRTSubLineDescFr\\n    PRTBrand\\n    PRTArticle\\n    PRTDescEn\\n    PRTDescFr\\n    PRTCode\\n    PRTChartDescEn\\n    PRTChartDescFr\\n    PRTLabourHours\\n    PRTQa\\n    PRTActive\\n    Supplier {\\n      id\\n      IsActive\\n    }\\n  }\\n}"}',
 })
-.then(response => {
-  console.log(response);
-})
-.catch(err => {
-  console.error(err);
-});
+  .then((response) => {
+    console.log(response);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
 ```
 
 ### Pyhton
+
 ```python
 import http.client
 
@@ -140,7 +153,9 @@ print(data.decode("utf-8"))
 ```
 
 ## Get Technician details
+
 ### GraphQL
+
 ```graphql
 {
   shopTechnician(id: "$ID") {
@@ -159,6 +174,7 @@ print(data.decode("utf-8"))
 ```
 
 ### CURL
+
 ```shell
 curl --request POST \
   --url https://api.staging.bumpertobumper.ca/cci_graphql \
@@ -167,23 +183,26 @@ curl --request POST \
 ```
 
 ### Javascript
+
 ```javascript
 fetch("https://api.staging.bumpertobumper.ca/cci_graphql", {
-  "method": "POST",
-  "headers": {
-    "content-type": "application/json"
+  method: "POST",
+  headers: {
+    "content-type": "application/json",
   },
-  "body": "{\"query\":\"{\\n  shopTechnician(id: \\\"$ID\\\") {\\n    TCHKey\\n    SHPKey\\n    TCHTitle\\n    TCHFname\\n    TCHEmail\\n    TCHTechrole\\n    TCHServrole\\n    TCHOwnerrole\\n    TCHOtherrole\\n    TCHOtherroletxt\\n  }\\n}\\n\"}"
+  body:
+    '{"query":"{\\n  shopTechnician(id: \\"$ID\\") {\\n    TCHKey\\n    SHPKey\\n    TCHTitle\\n    TCHFname\\n    TCHEmail\\n    TCHTechrole\\n    TCHServrole\\n    TCHOwnerrole\\n    TCHOtherrole\\n    TCHOtherroletxt\\n  }\\n}\\n"}',
 })
-.then(response => {
-  console.log(response);
-})
-.catch(err => {
-  console.error(err);
-});
+  .then((response) => {
+    console.log(response);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
 ```
 
 ### Python
+
 ```python
 import http.client
 
