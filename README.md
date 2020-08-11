@@ -6,14 +6,16 @@
 
 ## Introduction
 
-This repo aims at building both an automated and a curated documentation for Bumper to Bumper new graphQL API. To achieve this, we use:
+This repo aims at building both automated and curated documentation for Bumper to Bumper new graphQL API. To achieve this, we use:
 
 -   [VuePress](https://vuepress.vuejs.org/) to generate static pages from Markdown documents
 -   [GraphQL Markdown](https://github.com/exogen/graphql-markdown) to generate Markdown documents out of the publicly available schema
 
+The documentation is currently [available here](https://armitage35.github.io/cci_doc_v2/).
+
 ## Usage
 
-To run this project simply run `yarn` to get your packages and then either `yarn start` or `yarn dev` to start a local server.
+To run this project, run `yarn` to get your packages and then either `yarn start` or `yarn dev` to start a local server.
 
 ### Other commands
 

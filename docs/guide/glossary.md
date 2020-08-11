@@ -2,15 +2,15 @@
 
 -   **Course**: Courses offered by Uni-select to Shops/Members technician
 -   **Banner**: Programs offered by Uni-select to Shops
--   **BannerCommunication**: Email notifications triggered upon Banner and/or elment changes (signup, cancellation, conversion)
+-   **BannerCommunication**: Email notifications triggered upon Banner and element changes (signup, cancellation, conversion)
 -   **Element**: Options available for banners
--   **ExitInterview**: Survey of 4 questions conducted over the phone after shop closes
--   **Investment**: Payments which have been made to Shops or Members. NOTE: you'd need to check PaidTo column to determine to whom the payment has been made.
+-   **ExitInterview**: Survey of 4 questions conducted over the phone after the shop closes
+-   **Investment**: Payments that have been made to Shops or Members. NOTE: you'd need to check PaidTo column to determine to whom the payment has been made.
 -   **InvestmentType**: Type of funds available in the system
 -   **MajorAccount**: Major account list (e.g Canadian Tire ...etc.)
 -   **MemberEmployee**: Employees of the members
 -   **MemberProgram**: Member's subscriptions to Programs (e.g. B2B)
--   **Part**: Eligiable Part for Labour Warranties
+-   **Part**: Eligible Part for Labour Warranties
 -   **Program**: Programs available to members
 -   **ProvidedService**: Services that are provided by Members or Shops
 -   **RoadsideAssistanceCoverageDetails**: Roadside Coverage details
