@@ -1,6 +1,6 @@
 {
 	"name": "cci-doc",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Documentation for CCI's GraphQL API",
 	"main": "index.js",
 	"authors": {
