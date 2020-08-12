@@ -15,6 +15,6 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         TARGET_REPO: Armitage35/cci_doc_v2
-        TARGET_BRANCH: master
+        TARGET_BRANCH: gh-pages
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: docs/.vuepress/dist/
