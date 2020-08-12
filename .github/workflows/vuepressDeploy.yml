@@ -1,4 +1,9 @@
-name: Build and Deploy
+name: Build and Deploy - VuePress
+on:
+    push:
+        branches: [master]
+    pull_request:
+        branches: [master]
 on: [push]
 jobs:
   build-and-deploy:
