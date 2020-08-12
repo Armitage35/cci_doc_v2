@@ -1,7 +1,7 @@
 const { description } = require('../../package');
 
 module.exports = {
-	title: "Bumper to Bumper's GraphQL API",
+	title: "Uni-Select's GraphQL API",
 	description: description,
 	base: '/cci_doc_v2/',
 
