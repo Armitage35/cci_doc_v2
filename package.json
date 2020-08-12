@@ -1,34 +1,34 @@
 {
-  "name": "cci-doc",
-  "version": "1.0.5",
-  "description": "Documentation for CCI's GraphQL API",
-  "main": "index.js",
-  "authors": {
-    "name": "Adrien D. Ahlqvist",
-    "email": "adrien.dubois35@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "github.com:Armitage35/cci_doc_v2.git"
-  },
-  "scripts": {
-    "dev": "vuepress dev docs",
-    "start": "vuepress dev docs",
-    "lint": "yarn prettier --write .",
-    "build": "yarn lint && yarn generateDoc && vuepress build docs",
-    "generateDoc": "graphql-markdown https://api.staging.bumpertobumper.ca/cci_graphql --update-file docs/schema/README.md --title Schema --no-toc",
-    "deploy": "bash deploy.sh"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.5.3",
-    "@vuepress/plugin-medium-zoom": "^1.3.1",
-    "eslint": "^7.6.0",
-    "eslint-plugin-vue": "^6.2.2",
-    "prettier": "2.0.5",
-    "vuepress": "^1.3.1"
-  },
-  "dependencies": {
-    "graphql-markdown": "^5.2.0"
-  }
+	"name": "cci-doc",
+	"version": "1.0.5",
+	"description": "Documentation for CCI's GraphQL API",
+	"main": "index.js",
+	"authors": {
+		"name": "Adrien D. Ahlqvist",
+		"email": "adrien.dubois35@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "github.com:Armitage35/cci_doc_v2.git"
+	},
+	"scripts": {
+		"dev": "vuepress dev docs",
+		"start": "vuepress dev docs",
+		"lint": "yarn prettier --write .",
+		"build": "yarn lint && yarn generateDoc && vuepress build docs",
+		"generateDoc": "graphql-markdown https://api.staging.bumpertobumper.ca/cci_graphql --update-file docs/schema/README.md --title Schema --no-toc",
+		"deploy": "bash deploy.sh"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@vuepress/plugin-back-to-top": "^1.5.3",
+		"@vuepress/plugin-medium-zoom": "^1.3.1",
+		"eslint": "^7.6.0",
+		"eslint-plugin-vue": "^6.2.2",
+		"prettier": "2.0.5",
+		"vuepress": "^1.3.1"
+	},
+	"dependencies": {
+		"graphql-markdown": "^5.2.0"
+	}
 }
