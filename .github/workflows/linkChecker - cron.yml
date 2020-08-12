@@ -1,0 +1,14 @@
+name: periodic-markdown-link-check
+
+on:
+  schedule:
+    - cron: '8 8 * * 2'
+
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Markdown links check
+        uses: ruzickap/action-my-markdown-link-checker@v1
