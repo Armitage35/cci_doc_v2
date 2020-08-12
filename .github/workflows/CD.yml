@@ -17,10 +17,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install Packages
-      run: npm install
+      run: yarn
     - name: Deploy to GH Pages
       run: |
         git config --global user.email "adrien.dubois35@gmail.com"
         git config --global user.name "Armitage35"
         git remote set-url origin https://f9c4efca02407769111aad1e4755aa5ad511f372@github.com/Armitage35/cci_doc_v2.git
-        npm run deploy
+        yarn deploy
