@@ -23,6 +23,7 @@ This project also comes with the following commands:
 
 -   `lint`: updates the code to apply lint rules
 -   `generateDoc`: updates the schema with the one available online
+-   `deploy` will deploy the code from your machine but this repo comes with its own CD through GH actions so there are no reasons to do that
 
 ---
 
