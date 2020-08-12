@@ -1,4 +1,4 @@
-name: Build and Deploy - VuePress
+name: Build and Deploy - VuePress - Daily
 
 on:
   schedule:
