@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Code samples | Uni-Select&#39;s GraphQL API</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="Documentation for CCI's GraphQL API">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/cci_doc_v2/assets/css/0.styles.e372660e.css" as="style"><link rel="preload" href="/cci_doc_v2/assets/js/app.e4233576.js" as="script"><link rel="preload" href="/cci_doc_v2/assets/js/2.5e17541e.js" as="script"><link rel="preload" href="/cci_doc_v2/assets/js/10.1abb82ed.js" as="script"><link rel="prefetch" href="/cci_doc_v2/assets/js/11.687bfb0d.js"><link rel="prefetch" href="/cci_doc_v2/assets/js/12.9da6f2fb.js"><link rel="prefetch" href="/cci_doc_v2/assets/js/3.2badc308.js"><link rel="prefetch" href="/cci_doc_v2/assets/js/4.6baa2fbd.js"><link rel="prefetch" href="/cci_doc_v2/assets/js/5.0fe2784e.js"><link rel="prefetch" href="/cci_doc_v2/assets/js/6.0f328d93.js"><link rel="prefetch" href="/cci_doc_v2/assets/js/7.d558caf8.js"><link rel="prefetch" href="/cci_doc_v2/assets/js/8.d95f42f2.js"><link rel="prefetch" href="/cci_doc_v2/assets/js/9.d0dce5c4.js">
+    <link rel="stylesheet" href="/cci_doc_v2/assets/css/0.styles.e372660e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/cci_doc_v2/" class="home-link router-link-active"><!----> <span class="site-name">Uni-Select's GraphQL API</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/cci_doc_v2/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/cci_doc_v2/schema/" class="nav-link">
+  Schema
+</a></div><div class="nav-item"><a href="/cci_doc_v2/explorer/" class="nav-link">
+  Explorer
+</a></div><div class="nav-item"><a href="mailto:mohammad@cci-research.com" class="nav-link external">
+  Get in touch
+  <!----></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/cci_doc_v2/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/cci_doc_v2/schema/" class="nav-link">
+  Schema
+</a></div><div class="nav-item"><a href="/cci_doc_v2/explorer/" class="nav-link">
+  Explorer
+</a></div><div class="nav-item"><a href="mailto:mohammad@cci-research.com" class="nav-link external">
+  Get in touch
+  <!----></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/cci_doc_v2/guide/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/cci_doc_v2/guide/glossary.html" class="sidebar-link">Glossary</a></li><li><a href="/cci_doc_v2/guide/authentication.html" class="sidebar-link">Authentication</a></li><li><a href="/cci_doc_v2/guide/codeSamples.html" aria-current="page" class="active sidebar-link">Code samples</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#getting-investment-details" class="sidebar-link">Getting investment details</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#graphql" class="sidebar-link">GraphQL</a></li><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#curl" class="sidebar-link">CURL</a></li><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#javascript" class="sidebar-link">JavaScript</a></li><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#pyhton" class="sidebar-link">Pyhton</a></li></ul></li><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#get-parts-details" class="sidebar-link">Get Parts details</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#graphql-2" class="sidebar-link">GraphQL</a></li><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#curl-2" class="sidebar-link">CURL</a></li><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#javascript-2" class="sidebar-link">JavaScript</a></li><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#pyhton-2" class="sidebar-link">Pyhton</a></li></ul></li><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#get-technician-details" class="sidebar-link">Get Technician details</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#graphql-3" class="sidebar-link">GraphQL</a></li><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#curl-3" class="sidebar-link">CURL</a></li><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#javascript-3" class="sidebar-link">Javascript</a></li><li class="sidebar-sub-header"><a href="/cci_doc_v2/guide/codeSamples.html#python" class="sidebar-link">Python</a></li></ul></li></ul></li><li><a href="/cci_doc_v2/guide/changelog.html" class="sidebar-link">Changelog</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="code-samples"><a href="#code-samples" class="header-anchor">#</a> Code samples</h1> <h2 id="getting-investment-details"><a href="#getting-investment-details" class="header-anchor">#</a> Getting investment details</h2> <h3 id="graphql"><a href="#graphql" class="header-anchor">#</a> GraphQL</h3> <div class="language-graphql extra-class"><pre class="language-graphql"><code><span class="token keyword">query</span> <span class="token punctuation">{</span>
+	investment<span class="token punctuation">(</span><span class="token attr-name">id</span><span class="token punctuation">:</span> <span class="token variable">$ID</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		PaidTo
+		MemberID
+		ShopID
+		InvestmentTypeID
+		CreateDate
+		Amount
+		Comment
+		PaymentType
+		PaymentDate
+		PaymentNumber
+		InvestmentType <span class="token punctuation">{</span>
+			ID
+			Type
+			AvailableTo
+			id
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="curl"><a href="#curl" class="header-anchor">#</a> CURL</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">curl</span> --request POST <span class="token punctuation">\</span>
+  --url https://api.staging.bumpertobumper.ca/cci_graphql <span class="token punctuation">\</span>
+  --header <span class="token string">'content-type: application/json'</span> <span class="token punctuation">\</span>
+  --data <span class="token string">'{&quot;query&quot;:&quot;query {<span class="token entity" title="\n">\n</span>  investment (id: <span class="token entity" title="\n">\n</span>    <span class="token entity" title="\&quot;">\&quot;</span><span class="token variable">$ID</span><span class="token entity" title="\&quot;">\&quot;</span>) {<span class="token entity" title="\n">\n</span>    PaidTo<span class="token entity" title="\n">\n</span>    MemberID<span class="token entity" title="\n">\n</span>    ShopID<span class="token entity" title="\n">\n</span>    InvestmentTypeID<span class="token entity" title="\n">\n</span>    CreateDate<span class="token entity" title="\n">\n</span>    Amount<span class="token entity" title="\n">\n</span>    Comment<span class="token entity" title="\n">\n</span>    PaymentType<span class="token entity" title="\n">\n</span>    PaymentDate<span class="token entity" title="\n">\n</span>    PaymentNumber<span class="token entity" title="\n">\n</span>    InvestmentType {<span class="token entity" title="\n">\n</span>      ID<span class="token entity" title="\n">\n</span>      Type<span class="token entity" title="\n">\n</span>      AvailableTo<span class="token entity" title="\n">\n</span>      id<span class="token entity" title="\n">\n</span>    } <span class="token entity" title="\n">\n</span>  }<span class="token entity" title="\n">\n</span>}&quot;}'</span>
+</code></pre></div><h3 id="javascript"><a href="#javascript" class="header-anchor">#</a> JavaScript</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">'https://api.staging.bumpertobumper.ca/cci_graphql'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+	method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+	headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token string">'content-type'</span><span class="token operator">:</span> <span class="token string">'application/json'</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	body<span class="token operator">:</span>
+		<span class="token string">'{&quot;query&quot;:&quot;query {\\n  investment (id: \\n    \\&quot;$ID\\&quot;) {\\n    PaidTo\\n    MemberID\\n    ShopID\\n    InvestmentTypeID\\n    CreateDate\\n    Amount\\n    Comment\\n    PaymentType\\n    PaymentDate\\n    PaymentNumber\\n    InvestmentType {\\n      ID\\n      Type\\n      AvailableTo\\n      id\\n    } \\n  }\\n}&quot;}'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="pyhton"><a href="#pyhton" class="header-anchor">#</a> Pyhton</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> http<span class="token punctuation">.</span>client
+
+conn <span class="token operator">=</span> http<span class="token punctuation">.</span>client<span class="token punctuation">.</span>HTTPSConnection<span class="token punctuation">(</span><span class="token string">&quot;api.staging.bumpertobumper.ca&quot;</span><span class="token punctuation">)</span>
+
+payload <span class="token operator">=</span> <span class="token string">&quot;{\&quot;query\&quot;:\&quot;query {\\n  investment (id: \\n    \\\&quot;$ID\\\&quot;) {\\n    PaidTo\\n    MemberID\\n    ShopID\\n    InvestmentTypeID\\n    CreateDate\\n    Amount\\n    Comment\\n    PaymentType\\n    PaymentDate\\n    PaymentNumber\\n    InvestmentType {\\n      ID\\n      Type\\n      AvailableTo\\n      id\\n    } \\n  }\\n}\&quot;}&quot;</span>
+
+headers <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token string">'content-type'</span><span class="token punctuation">:</span> <span class="token string">&quot;application/json&quot;</span> <span class="token punctuation">}</span>
+
+conn<span class="token punctuation">.</span>request<span class="token punctuation">(</span><span class="token string">&quot;POST&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;/cci_graphql&quot;</span><span class="token punctuation">,</span> payload<span class="token punctuation">,</span> headers<span class="token punctuation">)</span>
+
+res <span class="token operator">=</span> conn<span class="token punctuation">.</span>getresponse<span class="token punctuation">(</span><span class="token punctuation">)</span>
+data <span class="token operator">=</span> res<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">&quot;utf-8&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="get-parts-details"><a href="#get-parts-details" class="header-anchor">#</a> Get Parts details</h2> <h3 id="graphql-2"><a href="#graphql-2" class="header-anchor">#</a> GraphQL</h3> <div class="language-graphql extra-class"><pre class="language-graphql"><code><span class="token keyword">query</span> <span class="token punctuation">{</span>
+	part<span class="token punctuation">(</span><span class="token attr-name">id</span><span class="token punctuation">:</span> <span class="token variable">$ID</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		PRTId
+		SUPKey
+		PRTLineCode
+		PRTSubLine
+		PRTSubLineDescEn
+		PRTSubLineDescFr
+		PRTBrand
+		PRTArticle
+		PRTDescEn
+		PRTDescFr
+		PRTCode
+		PRTChartDescEn
+		PRTChartDescFr
+		PRTLabourHours
+		PRTQa
+		PRTActive
+		Supplier <span class="token punctuation">{</span>
+			id
+			IsActive
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="curl-2"><a href="#curl-2" class="header-anchor">#</a> CURL</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">curl</span> --request POST <span class="token punctuation">\</span>
+  --url https://api.staging.bumpertobumper.ca/cci_graphql <span class="token punctuation">\</span>
+  --header <span class="token string">'content-type: application/json'</span> <span class="token punctuation">\</span>
+  --data <span class="token string">'{&quot;query&quot;:&quot;query {<span class="token entity" title="\n">\n</span>  part (id: <span class="token entity" title="\&quot;">\&quot;</span><span class="token variable">$ID</span><span class="token entity" title="\&quot;">\&quot;</span>) {<span class="token entity" title="\n">\n</span>    PRTId<span class="token entity" title="\n">\n</span>    SUPKey<span class="token entity" title="\n">\n</span>    PRTLineCode<span class="token entity" title="\n">\n</span>    PRTSubLine<span class="token entity" title="\n">\n</span>    PRTSubLineDescEn<span class="token entity" title="\n">\n</span>    PRTSubLineDescFr<span class="token entity" title="\n">\n</span>    PRTBrand<span class="token entity" title="\n">\n</span>    PRTArticle<span class="token entity" title="\n">\n</span>    PRTDescEn<span class="token entity" title="\n">\n</span>    PRTDescFr<span class="token entity" title="\n">\n</span>    PRTCode<span class="token entity" title="\n">\n</span>    PRTChartDescEn<span class="token entity" title="\n">\n</span>    PRTChartDescFr<span class="token entity" title="\n">\n</span>    PRTLabourHours<span class="token entity" title="\n">\n</span>    PRTQa<span class="token entity" title="\n">\n</span>    PRTActive<span class="token entity" title="\n">\n</span>    Supplier {<span class="token entity" title="\n">\n</span>      id<span class="token entity" title="\n">\n</span>      IsActive<span class="token entity" title="\n">\n</span>    }<span class="token entity" title="\n">\n</span>  }<span class="token entity" title="\n">\n</span>}&quot;}'</span>
+</code></pre></div><h3 id="javascript-2"><a href="#javascript-2" class="header-anchor">#</a> JavaScript</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">'https://api.staging.bumpertobumper.ca/cci_graphql'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+	method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+	headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token string">'content-type'</span><span class="token operator">:</span> <span class="token string">'application/json'</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	body<span class="token operator">:</span>
+		<span class="token string">'{&quot;query&quot;:&quot;query {\\n  part (id: \\&quot;$ID\\&quot;) {\\n    PRTId\\n    SUPKey\\n    PRTLineCode\\n    PRTSubLine\\n    PRTSubLineDescEn\\n    PRTSubLineDescFr\\n    PRTBrand\\n    PRTArticle\\n    PRTDescEn\\n    PRTDescFr\\n    PRTCode\\n    PRTChartDescEn\\n    PRTChartDescFr\\n    PRTLabourHours\\n    PRTQa\\n    PRTActive\\n    Supplier {\\n      id\\n      IsActive\\n    }\\n  }\\n}&quot;}'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="pyhton-2"><a href="#pyhton-2" class="header-anchor">#</a> Pyhton</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> http<span class="token punctuation">.</span>client
+
+conn <span class="token operator">=</span> http<span class="token punctuation">.</span>client<span class="token punctuation">.</span>HTTPSConnection<span class="token punctuation">(</span><span class="token string">&quot;api.staging.bumpertobumper.ca&quot;</span><span class="token punctuation">)</span>
+
+payload <span class="token operator">=</span> <span class="token string">&quot;{\&quot;query\&quot;:\&quot;query {\\n  part (id: \\\&quot;$ID\\\&quot;) {\\n    PRTId\\n    SUPKey\\n    PRTLineCode\\n    PRTSubLine\\n    PRTSubLineDescEn\\n    PRTSubLineDescFr\\n    PRTBrand\\n    PRTArticle\\n    PRTDescEn\\n    PRTDescFr\\n    PRTCode\\n    PRTChartDescEn\\n    PRTChartDescFr\\n    PRTLabourHours\\n    PRTQa\\n    PRTActive\\n    Supplier {\\n      id\\n      IsActive\\n    }\\n  }\\n}\&quot;}&quot;</span>
+
+headers <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token string">'content-type'</span><span class="token punctuation">:</span> <span class="token string">&quot;application/json&quot;</span> <span class="token punctuation">}</span>
+
+conn<span class="token punctuation">.</span>request<span class="token punctuation">(</span><span class="token string">&quot;POST&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;/cci_graphql&quot;</span><span class="token punctuation">,</span> payload<span class="token punctuation">,</span> headers<span class="token punctuation">)</span>
+
+res <span class="token operator">=</span> conn<span class="token punctuation">.</span>getresponse<span class="token punctuation">(</span><span class="token punctuation">)</span>
+data <span class="token operator">=</span> res<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">&quot;utf-8&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="get-technician-details"><a href="#get-technician-details" class="header-anchor">#</a> Get Technician details</h2> <h3 id="graphql-3"><a href="#graphql-3" class="header-anchor">#</a> GraphQL</h3> <div class="language-graphql extra-class"><pre class="language-graphql"><code><span class="token punctuation">{</span>
+	shopTechnician<span class="token punctuation">(</span><span class="token attr-name">id</span><span class="token punctuation">:</span> <span class="token string">&quot;$ID&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		TCHKey
+		SHPKey
+		TCHTitle
+		TCHFname
+		TCHEmail
+		TCHTechrole
+		TCHServrole
+		TCHOwnerrole
+		TCHOtherrole
+		TCHOtherroletxt
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="curl-3"><a href="#curl-3" class="header-anchor">#</a> CURL</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">curl</span> --request POST <span class="token punctuation">\</span>
+  --url https://api.staging.bumpertobumper.ca/cci_graphql <span class="token punctuation">\</span>
+  --header <span class="token string">'content-type: application/json'</span> <span class="token punctuation">\</span>
+  --data <span class="token string">'{&quot;query&quot;:&quot;{<span class="token entity" title="\n">\n</span>  shopTechnician(id: <span class="token entity" title="\&quot;">\&quot;</span><span class="token variable">$ID</span><span class="token entity" title="\&quot;">\&quot;</span>) {<span class="token entity" title="\n">\n</span>    TCHKey<span class="token entity" title="\n">\n</span>    SHPKey<span class="token entity" title="\n">\n</span>    TCHTitle<span class="token entity" title="\n">\n</span>    TCHFname<span class="token entity" title="\n">\n</span>    TCHEmail<span class="token entity" title="\n">\n</span>    TCHTechrole<span class="token entity" title="\n">\n</span>    TCHServrole<span class="token entity" title="\n">\n</span>    TCHOwnerrole<span class="token entity" title="\n">\n</span>    TCHOtherrole<span class="token entity" title="\n">\n</span>    TCHOtherroletxt<span class="token entity" title="\n">\n</span>  }<span class="token entity" title="\n">\n</span>}<span class="token entity" title="\n">\n</span>&quot;}'</span>
+</code></pre></div><h3 id="javascript-3"><a href="#javascript-3" class="header-anchor">#</a> Javascript</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">'https://api.staging.bumpertobumper.ca/cci_graphql'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+	method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+	headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token string">'content-type'</span><span class="token operator">:</span> <span class="token string">'application/json'</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	body<span class="token operator">:</span>
+		<span class="token string">'{&quot;query&quot;:&quot;{\\n  shopTechnician(id: \\&quot;$ID\\&quot;) {\\n    TCHKey\\n    SHPKey\\n    TCHTitle\\n    TCHFname\\n    TCHEmail\\n    TCHTechrole\\n    TCHServrole\\n    TCHOwnerrole\\n    TCHOtherrole\\n    TCHOtherroletxt\\n  }\\n}\\n&quot;}'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="python"><a href="#python" class="header-anchor">#</a> Python</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> http<span class="token punctuation">.</span>client
+
+conn <span class="token operator">=</span> http<span class="token punctuation">.</span>client<span class="token punctuation">.</span>HTTPSConnection<span class="token punctuation">(</span><span class="token string">&quot;api.staging.bumpertobumper.ca&quot;</span><span class="token punctuation">)</span>
+
+payload <span class="token operator">=</span> <span class="token string">&quot;{\&quot;query\&quot;:\&quot;{\\n  shopTechnician(id: \\\&quot;$ID\\\&quot;) {\\n    TCHKey\\n    SHPKey\\n    TCHTitle\\n    TCHFname\\n    TCHEmail\\n    TCHTechrole\\n    TCHServrole\\n    TCHOwnerrole\\n    TCHOtherrole\\n    TCHOtherroletxt\\n  }\\n}\\n\&quot;}&quot;</span>
+
+headers <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token string">'content-type'</span><span class="token punctuation">:</span> <span class="token string">&quot;application/json&quot;</span> <span class="token punctuation">}</span>
+
+conn<span class="token punctuation">.</span>request<span class="token punctuation">(</span><span class="token string">&quot;POST&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;/cci_graphql&quot;</span><span class="token punctuation">,</span> payload<span class="token punctuation">,</span> headers<span class="token punctuation">)</span>
+
+res <span class="token operator">=</span> conn<span class="token punctuation">.</span>getresponse<span class="token punctuation">(</span><span class="token punctuation">)</span>
+data <span class="token operator">=</span> res<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">&quot;utf-8&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">8/12/2020, 6:36:17 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/cci_doc_v2/guide/authentication.html" class="prev">
+        Authentication
+      </a></span> <span class="next"><a href="/cci_doc_v2/guide/changelog.html">
+        Changelog
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/cci_doc_v2/assets/js/app.e4233576.js" defer></script><script src="/cci_doc_v2/assets/js/2.5e17541e.js" defer></script><script src="/cci_doc_v2/assets/js/10.1abb82ed.js" defer></script>
+  </body>
+</html>
